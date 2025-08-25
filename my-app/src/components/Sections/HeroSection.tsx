@@ -1,33 +1,67 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
+import { motion } from 'framer-motion'
 import heroImage from '/assets/images/heroBg.jpg'
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full overflow-hidden">
       <div className="flex flex-col md:h-[80vh] md:flex-row-reverse">
         {/* Image (70% width on desktop) */}
-        <div
+        <motion.div
           className="h-64 w-full bg-cover bg-center py-5 md:h-auto md:basis-[70%]"
           style={{ backgroundImage: `url(${heroImage})` }}
-        ></div>
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+        />
 
         {/* Content (30% width on desktop) */}
-        <div className="container flex flex-col justify-center px-6 py-10 text-center md:basis-[30%] md:px-16 md:text-left">
-          <p className="font-bold uppercase tracking-wide text-primary">
+        <motion.div
+          className="container flex flex-col justify-center px-6 py-10 text-center md:basis-[30%] md:px-16 md:text-left"
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          <motion.p
+            className="font-bold uppercase tracking-wide text-primary"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
             Just Dropped
-          </p>
-          <h1 className="mt-1 text-3xl font-bold uppercase tracking-wide text-primary md:max-w-sm md:text-4xl">
+          </motion.p>
+
+          <motion.h1
+            className="mt-1 text-3xl font-bold uppercase tracking-wide text-primary md:max-w-sm md:text-4xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+          >
             Eyeshadow Brushes
-          </h1>
-          <p className="mt-4 text-text md:max-w-xs md:text-lg">
+          </motion.h1>
+
+          <motion.p
+            className="mt-4 text-text md:max-w-xs md:text-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
+          >
             Blend, shade, and pack on color with our four new ultra-soft,
             precisely-shaped eyeshadow brushes.
-          </p>
-          <button className="mx-auto mt-6 w-fit rounded-md bg-white px-6 py-3 text-sm font-medium text-text transition hover:bg-text hover:text-white md:mx-0">
+          </motion.p>
+
+          <motion.button
+            className="mx-auto mt-6 w-fit rounded-md bg-white px-6 py-3 text-sm font-medium text-text transition hover:bg-secondary hover:text-white md:mx-0"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
             Shop Now
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   )

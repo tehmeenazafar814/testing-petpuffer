@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import FadeInWhenVisible from 'components/Animate/FadeInWhenVisible'
 import AvailableSection from 'components/Sections/AvailableSection'
 import BestSellerSection from 'components/Sections/BestSellersSection'
 import EssentialsSection from 'components/Sections/EssentialsSection'
@@ -15,21 +16,40 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <ShopSection />
-      <EssentialsSection />
-      <ExclusiveSection />
-      {/* <AvailableSection />
-      <BestSellerSection />
 
-      <section className="py-6 md:px-10">
-        <VideoGallery />
-      </section>
+      <FadeInWhenVisible>
+        <ShopSection />
+      </FadeInWhenVisible>
 
-      <ShopByCategory />
+      <FadeInWhenVisible>
+        <EssentialsSection />
+      </FadeInWhenVisible>
 
-      <VirtualTryOnSection />
+      <FadeInWhenVisible>
+        <ExclusiveSection />
+      </FadeInWhenVisible>
 
-      <ShopOurIGSection /> */}
+      <FadeInWhenVisible>
+        <AvailableSection />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <BestSellerSection />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <section className="py-6 md:px-10">
+          <VideoGallery />
+        </section>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <ShopByCategory />
+      </FadeInWhenVisible>
+
+      {/* <VirtualTryOnSection /> */}
+
+      {/* <ShopOurIGSection /> */}
     </>
   )
 }

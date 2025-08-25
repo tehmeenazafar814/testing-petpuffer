@@ -25,7 +25,6 @@ const products = [
     desc: 'tapered shape • diffused finish',
     price: 22,
     img: '/assets/images/product.jpg',
-    tag: 'new'
   },
   {
     id: 4,
@@ -68,7 +67,7 @@ export default function ShopSection() {
             onClick={() => scroll('left')}
             className="absolute left-0 top-1/2 z-10 -translate-y-1/2 rounded-full border bg-white p-1 shadow-md hover:bg-gray-100 md:-left-10"
           >
-            <ChevronLeftCircle className="size-6 text-text" />
+            <ChevronLeftCircle className="size-6 text-secondary" />
           </button>
 
           {/* Carousel */}
@@ -84,7 +83,7 @@ export default function ShopSection() {
                 {/* Image */}
                 <div className="relative">
                   {p.tag && (
-                    <span className="absolute left-2 top-2 rounded bg-gray-200 px-2 py-0.5 text-xs uppercase">
+                    <span className="absolute left-2 top-2 rounded bg-primary px-2 py-0.5 text-xs uppercase text-white">
                       {p.tag}
                     </span>
                   )}
@@ -118,7 +117,7 @@ export default function ShopSection() {
                   <p className="text-xs text-gray-500">{p.desc}</p>
 
                   {/* Add to Cart Button */}
-                  <button className="mt-3 w-full rounded-md bg-black px-3 py-2 text-xs font-medium text-white transition hover:bg-gray-800">
+                  <button className="mt-3 w-full rounded-md bg-secondary px-3 py-2 text-xs font-medium text-white transition hover:bg-text">
                     Add to Cart
                   </button>
                 </div>
@@ -131,13 +130,13 @@ export default function ShopSection() {
             onClick={() => scroll('right')}
             className="absolute right-0 top-1/2 z-10 -translate-y-1/2 rounded-full border bg-white p-1 shadow-md hover:bg-gray-100 md:-right-10"
           >
-            <ChevronRightCircle className="size-6 text-text" />
+            <ChevronRightCircle className="size-6 text-secondary" />
           </button>
         </div>
 
         {/* Bottom Button */}
         <div className="mt-10 flex justify-center">
-          <button className="rounded-md border border-text px-6 py-2 text-sm font-medium text-text transition hover:bg-text hover:text-white">
+          <button className="rounded-md border border-text px-6 py-2 text-sm font-medium text-text transition hover:border-0 hover:bg-secondary hover:text-white">
             Shop Now
           </button>
         </div>

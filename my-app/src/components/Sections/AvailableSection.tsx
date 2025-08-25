@@ -23,7 +23,7 @@ const AvailableSection = () => {
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-text">
             Now Available
           </p>
-          <h2 className="mb-4 max-w-sm text-center text-3xl font-bold uppercase leading-tight text-[#9d7d85] md:text-4xl">
+          <h2 className="mb-4 max-w-sm text-center text-3xl font-bold uppercase leading-tight text-primary md:text-4xl">
             True brown kylash volume mascara
           </h2>
           <p className="mb-6 max-w-sm text-center text-base font-normal text-text md:text-lg">
@@ -31,7 +31,7 @@ const AvailableSection = () => {
             defines, lifts, and holds curl without clumping, smudging, or
             flaking.
           </p>
-          <button className="rounded border border-text px-6 py-2 text-sm font-medium text-text transition-colors duration-300 hover:bg-text hover:text-white">
+          <button className="rounded border border-text px-6 py-2 text-sm font-medium text-text transition-colors duration-300 hover:border-0 hover:bg-secondary hover:text-white">
             Shop Now
           </button>
         </div>

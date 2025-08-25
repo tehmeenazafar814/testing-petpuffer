@@ -67,7 +67,7 @@ export default function VideoGallery() {
 
   return (
     <div className="relative py-10 text-primary">
-      <h2 className="mb-10 w-full whitespace-nowrap px-2 text-center text-3xl font-semibold sm:w-auto md:text-4xl">
+      <h2 className="mb-10 w-full whitespace-nowrap px-2 text-center text-3xl font-bold sm:w-auto md:text-4xl">
         Trending Now
       </h2>
 

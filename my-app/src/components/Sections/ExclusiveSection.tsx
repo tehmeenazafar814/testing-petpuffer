@@ -22,7 +22,7 @@ const ExclusiveSection = () => {
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-text">
             ONLINE EXCLUSIVE
           </p>
-          <h2 className="mb-4 text-center text-3xl font-bold leading-tight text-[#9d7d85] md:text-4xl">
+          <h2 className="mb-4 text-center text-3xl font-bold leading-tight text-primary md:text-4xl">
             FREE <br /> BRUSH HOLDER
           </h2>
           <p className="mb-6 max-w-sm text-center text-base font-normal text-text md:text-lg">
@@ -35,7 +35,7 @@ const ExclusiveSection = () => {
             Free with any accessory bundle purchase. While supplies last. Offer
             ends <span className="font-semibold">08/24/25 @ 11:59 PM PST</span>.
           </p>
-          <button className="rounded border border-text px-6 py-2 text-sm font-medium text-text transition-colors duration-300 hover:bg-text hover:text-white">
+          <button className="rounded border border-text px-6 py-2 text-sm font-medium text-text transition-colors duration-300 hover:border-0 hover:bg-secondary hover:text-white">
             Shop Now
           </button>
         </div>

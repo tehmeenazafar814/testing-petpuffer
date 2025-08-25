@@ -23,7 +23,7 @@ const ShopByCategory = () => {
 
   return (
     <section className="px-4 py-10">
-      <h2 className="mb-6 w-full px-2 text-center text-3xl font-semibold text-primary md:text-4xl">
+      <h2 className="mb-6 w-full px-2 text-center text-3xl font-bold text-primary md:text-4xl">
         Shop by Category
       </h2>
 
@@ -87,13 +87,13 @@ const ShopByCategory = () => {
             onClick={prevSlide}
             className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-md"
           >
-            <ChevronLeft className="size-5 text-gray-600" />
+            <ChevronLeft className="size-5 text-primary" />
           </button>
           <button
             onClick={nextSlide}
             className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white p-2 shadow-md"
           >
-            <ChevronRight className="size-5 text-gray-600" />
+            <ChevronRight className="size-5 text-primary" />
           </button>
 
           {/* Dots */}
@@ -113,7 +113,7 @@ const ShopByCategory = () => {
 
       {/* Shop Now Button */}
       <div className="mt-4 flex justify-center">
-        <button className="rounded border border-text px-6 py-2 text-sm font-medium text-text transition-colors duration-300 hover:bg-text hover:text-white">
+        <button className="rounded border border-text px-6 py-2 text-sm font-medium text-text transition-colors duration-300 hover:border-0 hover:bg-secondary hover:text-white">
           shop now
         </button>
       </div>

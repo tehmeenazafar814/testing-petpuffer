@@ -24,7 +24,7 @@ export default function BestSellerSection() {
             our first-of-its-kind formula melts into the skin likea cream but
             has the smoothing, soft-focus effects of a powder.
           </p>
-          <button className="mx-auto mt-6 w-fit rounded-md bg-white px-6 py-3 text-sm font-medium text-text transition hover:bg-text hover:text-white md:mx-0">
+          <button className="mx-auto mt-6 w-fit rounded-md bg-white px-6 py-3 text-sm font-medium text-text transition hover:bg-primary hover:text-white md:mx-0">
             Shop Now
           </button>
         </div>

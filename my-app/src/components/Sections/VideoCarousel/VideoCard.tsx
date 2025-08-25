@@ -72,7 +72,7 @@ export function VideoCard({
       {!isPlaying && (
         <div className="absolute inset-0 flex items-center justify-center">
           <button className="rounded-full bg-white/50 p-3">
-            <Play className="fill-red text-red" />
+            <Play className="fill-primary text-primary" />
           </button>
         </div>
       )}

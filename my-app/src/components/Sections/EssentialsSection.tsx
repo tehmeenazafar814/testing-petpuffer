@@ -28,7 +28,7 @@ export default function EssentialsSection() {
             <p className="mt-3 text-lg leading-tight text-text">
               use them together to create natural to bold eye looks.
             </p>
-            <button className="mt-6 rounded-md border border-text px-6 py-2 text-sm font-medium text-text transition hover:bg-text hover:text-white">
+            <button className="mt-6 rounded-md border border-text px-6 py-2 text-sm font-medium text-text transition hover:border-0 hover:bg-secondary hover:text-white">
               shop now
             </button>
           </div>

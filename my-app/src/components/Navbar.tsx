@@ -34,43 +34,46 @@ export default function Navbar() {
 
         {/* ---- CENTER LOGO ---- */}
         <div className="flex flex-col items-center text-center">
-          <h1 className="text-lg font-bold tracking-wide md:text-2xl">
+          <a
+            href="/"
+            className="text-lg font-bold tracking-wide text-primary md:text-2xl"
+          >
             KYLIE COSMETICS
-          </h1>
-          <span className="text-sm font-medium text-gray-700 md:text-sm">
+          </a>
+          <span className="text-sm font-medium text-text md:text-sm">
             KYLIE JENNER
           </span>
         </div>
 
         {/* ---- MOBILE RIGHT (Wishlist + Cart) ---- */}
         <div className="flex items-center gap-4 md:hidden">
-          <Heart className="size-6 cursor-pointer" />
-          <ShoppingBag className="size-6 cursor-pointer" />
+          <Heart className="size-6 cursor-pointer hover:text-secondary" />
+          <ShoppingBag className="size-6 cursor-pointer hover:text-secondary" />
         </div>
 
         {/* ---- DESKTOP ICONS ---- */}
         <div className="hidden items-center gap-5 text-text md:flex">
-          <Heart className="size-5 cursor-pointer" />
-          <Search className="size-5 cursor-pointer" />
-          <ShoppingBag className="size-5 cursor-pointer" />
+          <Heart className="size-5 cursor-pointer hover:text-secondary" />
+          <Search className="size-5 cursor-pointer hover:text-secondary" />
+          <ShoppingBag className="size-5 cursor-pointer hover:text-secondary" />
         </div>
       </div>
 
       {/* ---- DESKTOP NAV LINKS ---- */}
       <nav className="hidden justify-center space-x-8 py-2 text-sm md:flex">
-        <Link to="#" className="hover:underline">
+        <Link to="#" className="hover:text-secondary hover:underline">
           cosmetics
         </Link>
-        <Link to="#" className="hover:underline">
+        <Link to="#" className="hover:text-secondary hover:underline">
           fragrance
         </Link>
-        <Link to="#" className="hover:underline">
+        <Link to="#" className="hover:text-secondary hover:underline">
           skin
         </Link>
-        <Link to="#" className="hover:underline">
+        <Link to="#" className="hover:text-secondary hover:underline">
           discover
         </Link>
-        <Link to="#" className="hover:underline">
+        <Link to="#" className="hover:text-secondary hover:underline">
           rewards
         </Link>
       </nav>
