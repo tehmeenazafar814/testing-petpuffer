@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import TopBar from './Sections/TopBar'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 export default function App() {
   return (
@@ -16,6 +17,8 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/*" element={<HomePage />} />
       </Routes>
+
+      <Footer />
     </div>
   )
 }
