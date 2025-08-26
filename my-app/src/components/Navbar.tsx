@@ -36,12 +36,12 @@ export default function Navbar() {
         <div className="flex flex-col items-center text-center">
           <a
             href="/"
-            className="text-lg font-bold tracking-wide text-primary md:text-2xl"
+            className="text-xl font-bold tracking-wide text-primary md:text-3xl"
           >
-            KYLIE COSMETICS
+            Moroccan Glow
           </a>
-          <span className="text-sm font-medium text-text md:text-sm">
-            KYLIE JENNER
+          <span className="text-sm font-medium uppercase text-text md:text-sm">
+            By Sarra
           </span>
         </div>
 

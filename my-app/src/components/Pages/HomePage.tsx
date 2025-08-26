@@ -47,9 +47,9 @@ export default function HomePage() {
         <ShopByCategory />
       </FadeInWhenVisible>
 
-      {/* <VirtualTryOnSection /> */}
+      <VirtualTryOnSection />
 
-      {/* <ShopOurIGSection /> */}
+      <ShopOurIGSection />
     </>
   )
 }
