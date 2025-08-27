@@ -6,50 +6,47 @@ import EssentialsSection from 'components/Sections/EssentialsSection'
 import ExclusiveSection from 'components/Sections/ExclusiveSection'
 import HeroSection from 'components/Sections/HeroSection'
 import ShopOurIGSection from 'components/Sections/InstaSection'
+import ReviewsSection from 'components/Sections/ReviewsSection'
 import ShopByCategory from 'components/Sections/ShopByCategory'
 import ShopSection from 'components/Sections/ShopSection'
 import VideoGallery from 'components/Sections/VideoCarousel/VideoGallery'
-import VirtualTryOnSection from 'components/Sections/VirtualTryOnSection'
+// import VirtualTryOnSection from 'components/Sections/VirtualTryOnSection'
 import React from 'react'
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
-
       <FadeInWhenVisible>
         <ShopSection />
       </FadeInWhenVisible>
-
       <FadeInWhenVisible>
         <EssentialsSection />
       </FadeInWhenVisible>
-
       <FadeInWhenVisible>
-        <ExclusiveSection />
-      </FadeInWhenVisible>
-
-      <FadeInWhenVisible>
-        <AvailableSection />
-      </FadeInWhenVisible>
-
-      <FadeInWhenVisible>
-        <BestSellerSection />
-      </FadeInWhenVisible>
-
-      <FadeInWhenVisible>
-        <section className="py-6 md:px-10">
+        <section className="md:px-10 md:py-6">
           <VideoGallery />
         </section>
       </FadeInWhenVisible>
-
+      <FadeInWhenVisible>
+        <ExclusiveSection />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <AvailableSection />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <BestSellerSection />
+      </FadeInWhenVisible>
       <FadeInWhenVisible>
         <ShopByCategory />
       </FadeInWhenVisible>
-
-      <VirtualTryOnSection />
-
-      <ShopOurIGSection />
+      {/* <VirtualTryOnSection /> */}\
+      <FadeInWhenVisible>
+        <ReviewsSection />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <ShopOurIGSection />
+      </FadeInWhenVisible>
     </>
   )
 }

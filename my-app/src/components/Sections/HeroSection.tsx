@@ -29,7 +29,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Just Dropped
+            Experience Your
           </motion.p>
 
           <motion.h1
@@ -38,7 +38,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
-            Eyeshadow Brushes
+            Natural Glow
           </motion.h1>
 
           <motion.p
@@ -47,8 +47,8 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.8 }}
           >
-            Blend, shade, and pack on color with our four new ultra-soft,
-            precisely-shaped eyeshadow brushes.
+            Through Moroccan Hammam Rituals Luxurious | Natural Skincare |
+            Ancient Moroccan Rituals
           </motion.p>
 
           <motion.button

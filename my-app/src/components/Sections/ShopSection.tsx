@@ -5,7 +5,7 @@ import React, { useRef } from 'react'
 const products = [
   {
     id: 1,
-    name: 'eyeshadow shader brush 06',
+    name: 'eyeshadow shader brush',
     desc: 'short bristles • shaded finish',
     price: 22,
     img: '/assets/images/product.jpg',
@@ -13,7 +13,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'eyeshadow all-over blending brush 07',
+    name: 'eyeshadow all-over blending brush',
     desc: 'fluffy bristles • diffused finish',
     price: 22,
     img: '/assets/images/product.jpg',
@@ -21,14 +21,14 @@ const products = [
   },
   {
     id: 3,
-    name: 'eyeshadow crease blending brush 08',
+    name: 'eyeshadow crease blending brush',
     desc: 'tapered shape • diffused finish',
     price: 22,
-    img: '/assets/images/product.jpg',
+    img: '/assets/images/product.jpg'
   },
   {
     id: 4,
-    name: 'eyeshadow packing brush 09',
+    name: 'eyeshadow packing brush',
     desc: 'flat shape • clean finish',
     price: 22,
     img: '/assets/images/product.jpg',
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 5,
-    name: 'eyeshadow packing brush 09',
+    name: 'eyeshadow packing brush',
     desc: 'flat shape • clean finish',
     price: 22,
     img: '/assets/images/product.jpg',
@@ -58,7 +58,12 @@ export default function ShopSection() {
   }
 
   return (
-    <section className="py-12">
+    <section className="md:py-12">
+      {/* Heading */}
+      <h2 className="mb-10 w-full px-2 text-center text-3xl font-bold text-primary md:text-4xl">
+        Best Sellers
+      </h2>
+
       <div className="container mx-auto px-6 md:px-16">
         {/* Carousel Wrapper (with arrows) */}
         <div className="relative">
@@ -83,14 +88,14 @@ export default function ShopSection() {
                 {/* Image */}
                 <div className="relative">
                   {p.tag && (
-                    <span className="absolute left-2 top-2 rounded bg-primary px-2 py-0.5 text-xs uppercase text-white">
+                    <span className="absolute left-2 top-2 rounded bg-primary px-2 py-0.5 text-sm uppercase text-white">
                       {p.tag}
                     </span>
                   )}
                   <img
                     src={p.img}
                     alt={p.name}
-                    className="h-auto w-full rounded-t-lg object-cover pb-20"
+                    className="mb-20 h-96 w-full rounded-t-lg object-cover"
                   />
                 </div>
 
@@ -111,8 +116,8 @@ export default function ShopSection() {
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <h3 className="text-sm font-medium capitalize">{p.name}</h3>
-                    <p className="text-sm font-semibold">${p.price}</p>
+                    <h3 className="font-medium capitalize">{p.name}</h3>
+                    <p className="font-semibold">${p.price}</p>
                   </div>
                   <p className="text-xs text-gray-500">{p.desc}</p>
 

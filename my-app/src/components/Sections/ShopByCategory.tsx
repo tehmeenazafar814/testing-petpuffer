@@ -22,7 +22,7 @@ const ShopByCategory = () => {
   }
 
   return (
-    <section className="px-4 py-10">
+    <section className="px-4 md:py-10">
       <h2 className="mb-6 w-full px-2 text-center text-3xl font-bold text-primary md:text-4xl">
         Shop by Category
       </h2>

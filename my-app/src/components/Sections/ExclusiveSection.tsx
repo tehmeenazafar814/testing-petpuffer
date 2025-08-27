@@ -3,7 +3,7 @@ import React from 'react'
 
 const ExclusiveSection = () => {
   return (
-    <section className="bg-background px-4 py-10 md:px-20">
+    <section className="bg-background px-4 md:px-20 md:py-10">
       <div className="flex flex-col overflow-hidden rounded-xl bg-white md:flex-row">
         {/* Image container */}
         <div className="w-full md:w-1/2">

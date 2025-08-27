@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react'
-import { Heart, Search, ShoppingBag, Menu, X } from 'lucide-react'
+import { Heart, Search, ShoppingBag, Menu, X, SparkleIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <header className="w-full shadow-sm">
       {/* Top Row */}
-      <div className="container mx-auto flex items-center justify-between px-4 py-3 md:px-6">
+      <div className="container mx-auto flex items-center justify-between px-4 py-1 md:px-6">
         {/* Left - Locale & Currency */}
         <div className="hidden items-center space-x-2 text-sm md:flex">
           <span className="uppercase">us</span>
@@ -64,9 +64,21 @@ export default function Navbar() {
         <Link to="#" className="hover:text-secondary hover:underline">
           cosmetics
         </Link>
-        <Link to="#" className="hover:text-secondary hover:underline">
+        <Link
+          to="#"
+          className="group relative hover:text-secondary hover:underline"
+        >
           fragrance
+          {/* Sparkle bottom-left */}
+          <span className="absolute -bottom-2 -left-2 text-text transition-colors group-hover:text-secondary">
+            <SparkleIcon className="size-3" />
+          </span>
+          {/* Sparkle top-right */}
+          <span className="absolute -right-2 -top-1 text-text transition-colors group-hover:text-secondary">
+            <SparkleIcon className="size-3" />
+          </span>
         </Link>
+
         <Link to="#" className="hover:text-secondary hover:underline">
           skin
         </Link>

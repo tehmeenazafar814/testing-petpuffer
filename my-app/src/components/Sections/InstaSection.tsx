@@ -37,7 +37,7 @@ const ShopOurIGSection = () => {
   const closeModal = () => setSelectedPost(null)
 
   return (
-    <section className="px-4 py-12">
+    <section className="px-4 md:py-12">
       {/* Heading */}
       <h2 className="mb-10 w-full px-2 text-center text-3xl font-semibold text-primary md:text-4xl">
         Shop Our IG
