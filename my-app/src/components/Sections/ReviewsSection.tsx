@@ -43,7 +43,7 @@ export default function ReviewsSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       nextReview()
-    }, 4000) // change every 4 seconds
+    }, 7000) // change every 7 seconds
 
     return () => clearInterval(interval) // cleanup
   }, [])
