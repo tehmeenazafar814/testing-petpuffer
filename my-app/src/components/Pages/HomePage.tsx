@@ -4,6 +4,7 @@ import AvailableSection from 'components/Sections/AvailableSection'
 import BestSellerSection from 'components/Sections/BestSellersSection'
 import EssentialsSection from 'components/Sections/EssentialsSection'
 import ExclusiveSection from 'components/Sections/ExclusiveSection'
+import FeatureSection from 'components/Sections/FeatureSection'
 import HeroSection from 'components/Sections/HeroSection'
 import ShopOurIGSection from 'components/Sections/InstaSection'
 import ReviewsSection from 'components/Sections/ReviewsSection'
@@ -33,6 +34,9 @@ export default function HomePage() {
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <AvailableSection />
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
+        <FeatureSection />
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <BestSellerSection />

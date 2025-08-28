@@ -54,8 +54,8 @@ const Footer = () => {
         <a href="#">faq</a>
         <a href="#">shipping</a>
         <a href="#">order tracking</a>
-        <a href="#">rewards</a>
-        <a href="#">gift card balance</a>
+        <a href="#">refund policy</a>
+        <a href="#">skin concerns?</a>
       </div>
 
       {/* Bottom links */}

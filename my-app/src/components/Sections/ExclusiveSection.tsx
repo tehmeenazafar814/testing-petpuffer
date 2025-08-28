@@ -20,20 +20,20 @@ const ExclusiveSection = () => {
         {/* Text content */}
         <div className="flex w-full flex-col items-center justify-center px-6 py-8 text-center md:w-1/2 md:items-center md:px-12 md:text-left">
           <p className="mb-2 text-sm font-bold uppercase tracking-wide text-text">
-            ONLINE EXCLUSIVE
+            Moroccan Glow Exclusive
           </p>
           <h2 className="mb-4 text-center text-3xl font-bold leading-tight text-primary md:text-4xl">
-            FREE <br /> BRUSH HOLDER
+            Moroccan <br /> Hammam Kit
           </h2>
           <p className="mb-6 max-w-sm text-center text-base font-normal text-text md:text-lg">
-            Get a free, limited-edition{' '}
-            <span className="font-semibold">brush holder</span> with any
-            accessory bundle purchase – perfect for keeping your new eyeshadow
-            brushes organized and ready to go.
+            Elevate your skincare with our{' '}
+            <span className="font-semibold">100% organic</span> Moroccan Black
+            Soap infused with Argan, paired with a Premium Silk Exfoliating
+            Kesse Glove.
           </p>
           <p className="mb-8 max-w-sm text-center text-xs leading-tight text-text">
-            Free with any accessory bundle purchase. While supplies last. Offer
-            ends <span className="font-semibold">08/24/25 @ 11:59 PM PST</span>.
+            You save upto <span className="font-semibold">£30</span> with this
+            bundle purchase.
           </p>
           <button className="rounded border border-text px-6 py-2 text-sm font-medium text-text transition-colors duration-300 hover:border-0 hover:bg-secondary hover:text-white">
             Shop Now
