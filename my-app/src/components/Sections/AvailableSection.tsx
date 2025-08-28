@@ -14,7 +14,6 @@ const AvailableSection = () => {
             loop
             muted
             playsInline
-            controls
           />
         </div>
 

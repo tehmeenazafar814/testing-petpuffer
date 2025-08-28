@@ -6,31 +6,31 @@ import VideoOverlay from './VideoOverlay'
 
 const videos = [
   {
-    src: 'https://cdn3.fireworktv.com/medias/2025/7/15/1752618913-ijduoprb/watermarked/720/amandacurseaden.mp4',
+    src: '/assets/videos/2.mp4',
     title: 'Top 1',
     price: '$35.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: 'https://cdn3.fireworktv.com/medias/2025/7/15/1752618913-ijduoprb/watermarked/720/amandacurseaden.mp4',
+    src: '/assets/videos/2.mp4',
     title: 'Top 2',
     price: '$29.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: 'https://cdn3.fireworktv.com/medias/2025/7/15/1752618913-ijduoprb/watermarked/720/amandacurseaden.mp4',
+    src: '/assets/videos/2.mp4',
     title: 'Top 3',
     price: '$55.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: 'https://cdn3.fireworktv.com/medias/2025/7/15/1752618913-ijduoprb/watermarked/720/amandacurseaden.mp4',
+    src: '/assets/videos/2.mp4',
     title: 'Top 4',
     price: '$42.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: 'https://cdn3.fireworktv.com/medias/2025/7/15/1752618913-ijduoprb/watermarked/720/amandacurseaden.mp4',
+    src: '/assets/videos/2.mp4',
     title: 'Top 5',
     price: '$38.00',
     image: '/assets/images/products/test.jpg'

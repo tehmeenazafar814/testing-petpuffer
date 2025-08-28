@@ -5,7 +5,7 @@ import React, { useRef } from 'react'
 const products = [
   {
     id: 1,
-    name: 'eyeshadow shader brush',
+    name: 'Argan Oil',
     desc: 'short bristles • shaded finish',
     price: 22,
     img: '/assets/images/product.jpg',
@@ -13,7 +13,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'eyeshadow all-over blending brush',
+    name: 'Argan Oil',
     desc: 'fluffy bristles • diffused finish',
     price: 22,
     img: '/assets/images/product.jpg',
@@ -21,14 +21,14 @@ const products = [
   },
   {
     id: 3,
-    name: 'eyeshadow crease blending brush',
+    name: 'Argan Oil',
     desc: 'tapered shape • diffused finish',
     price: 22,
     img: '/assets/images/product.jpg'
   },
   {
     id: 4,
-    name: 'eyeshadow packing brush',
+    name: 'Argan Oil',
     desc: 'flat shape • clean finish',
     price: 22,
     img: '/assets/images/product.jpg',
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 5,
-    name: 'eyeshadow packing brush',
+    name: 'Argan Oil',
     desc: 'flat shape • clean finish',
     price: 22,
     img: '/assets/images/product.jpg',

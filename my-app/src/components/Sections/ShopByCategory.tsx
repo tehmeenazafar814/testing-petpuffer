@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const categories = [
-  { title: 'LIPS', image: '/assets/images/shop1.webp' },
-  { title: 'FRAGRANCE', image: '/assets/images/shop1.webp' },
-  { title: 'BLUSH', image: '/assets/images/shop1.webp' },
-  { title: 'EYES', image: '/assets/images/shop1.webp' },
-  { title: 'FACE', image: '/assets/images/shop1.webp' }
+  { title: 'LIPS', image: '/assets/videos/test.mp4' },
+  { title: 'FRAGRANCE', image: '/assets/videos/test.mp4' },
+  { title: 'BLUSH', image: '/assets/videos/test.mp4' },
+  { title: 'EYES', image: '/assets/videos/test.mp4' },
+  { title: 'FACE', image: '/assets/videos/test.mp4' }
 ]
 
 const ShopByCategory = () => {
@@ -38,9 +38,16 @@ const ShopByCategory = () => {
                 key={index}
                 className="relative flex-1 overflow-hidden rounded-xl shadow-md transition hover:scale-[1.02]"
               >
-                <img
+                {/* <img
                   src={cat.image}
                   alt={cat.title}
+                  className="h-auto w-full object-cover"
+                /> */}
+                <video
+                  src={categories[currentIndex].image}
+                  autoPlay
+                  loop
+                  muted
                   className="h-auto w-full object-cover"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20">
@@ -70,9 +77,16 @@ const ShopByCategory = () => {
         {/* === MOBILE SLIDER (1 at a time) === */}
         <div className="relative block md:hidden">
           <div className="relative overflow-hidden rounded-xl">
-            <img
+            {/* <img
               src={categories[currentIndex].image}
               alt={categories[currentIndex].title}
+              className="h-[400px] w-full object-cover"
+            /> */}
+            <video
+              src={categories[currentIndex].image}
+              autoPlay
+              loop
+              muted
               className="h-[400px] w-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/20">
