@@ -52,7 +52,7 @@ export default function HeroSection() {
           </motion.p>
 
           <motion.button
-            className="mx-auto mt-6 w-fit rounded-md bg-white px-6 py-3 text-sm font-medium text-text transition hover:bg-secondary hover:text-white md:mx-0"
+            className="mx-auto mt-4 w-fit rounded-md bg-white px-6 py-3 text-sm font-medium text-text transition hover:bg-secondary hover:text-white md:mx-0 md:ml-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
