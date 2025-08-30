@@ -58,7 +58,7 @@ export default function ShopSection() {
   }
 
   return (
-    <section className="md:py-12">
+    <section className="py-8 md:py-12">
       {/* Heading */}
       <h2 className="mb-10 w-full px-2 text-center text-3xl font-bold text-primary md:text-4xl">
         Best Sellers
