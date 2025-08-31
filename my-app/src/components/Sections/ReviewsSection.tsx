@@ -39,13 +39,11 @@ export default function ReviewsSection() {
   const [current, setCurrent] = useState(0)
   const [fade, setFade] = useState(true)
 
-  // Auto-slide effect
   useEffect(() => {
     const interval = setInterval(() => {
       nextReview()
-    }, 7000) // change every 7 seconds
-
-    return () => clearInterval(interval) // cleanup
+    }, 7000)
+    return () => clearInterval(interval)
   }, [])
 
   const prevReview = () => {
@@ -60,26 +58,30 @@ export default function ReviewsSection() {
     )
   }
 
-  // Smooth fade transition handler
   const triggerTransition = (updateFn) => {
-    setFade(false) // start fade-out
+    setFade(false)
     setTimeout(() => {
       updateFn()
-      setFade(true) // fade-in after update
-    }, 300) // match duration-300
+      setFade(true)
+    }, 300)
   }
 
   return (
-    <section className="px-6 py-12 md:px-20">
+    <section
+      className="bg-cover bg-center bg-no-repeat px-6 py-12 md:px-20"
+      style={{
+        backgroundImage: "url('/assets/images/testimonials.jpg')",
+        backgroundAttachment: 'fixed'
+      }}
+    >
       <h2 className="mb-6 w-full px-2 text-center text-3xl font-bold text-primary md:text-4xl">
         What Our Customers Say
       </h2>
 
       <div className="mx-auto max-w-5xl text-center">
-        {/* Review Card */}
-        <div className="relative rounded-lg p-6">
+        <div className="relative rounded-lg p-6 backdrop-blur-sm">
           <div
-            className={`transition-all duration-700${
+            className={`transition-all duration-700 ${
               fade ? 'translate-y-0 opacity-100' : '-translate-y-2 opacity-0'
             }`}
           >
@@ -91,7 +93,6 @@ export default function ReviewsSection() {
               — {reviews[current].author}
             </p>
 
-            {/* Rating */}
             <div className="mt-2 flex justify-center">
               {[...Array(reviews[current].rating)].map((_, i) => (
                 <span key={i} className="text-lg text-primary">
@@ -101,7 +102,6 @@ export default function ReviewsSection() {
             </div>
           </div>
 
-          {/* Arrows */}
           <button
             onClick={prevReview}
             className="absolute -left-5 top-1/2 -translate-y-1/2 rounded-full bg-white p-2 shadow hover:bg-gray-100"

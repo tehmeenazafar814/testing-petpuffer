@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative h-screen w-full overflow-hidden md:h-screen">
       {/* Full background image */}
       <motion.div
-        className="absolute inset-0"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -49,8 +49,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.8 }}
         >
-          Through Moroccan Hammam Rituals Luxurious | Natural Skincare |
-          Ancient Moroccan Rituals
+          Through Moroccan Hammam Rituals Luxurious | Natural Skincare | Ancient
+          Moroccan Rituals
         </motion.p>
 
         <motion.button
