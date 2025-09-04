@@ -62,13 +62,13 @@ export default function Navbar() {
       {/* ---- DESKTOP NAV LINKS ---- */}
       <nav className="hidden justify-center space-x-8 py-2 text-sm md:flex">
         <Link to="#" className="hover:text-secondary hover:underline">
-          cosmetics
+          Face & Body Care
         </Link>
         <Link
           to="#"
           className="group relative hover:text-secondary hover:underline"
         >
-          fragrance
+          Hair Care
           {/* Sparkle bottom-left */}
           <span className="absolute -bottom-2 -left-2 text-text transition-colors group-hover:text-secondary">
             <SparkleIcon className="size-3" />
@@ -80,13 +80,10 @@ export default function Navbar() {
         </Link>
 
         <Link to="#" className="hover:text-secondary hover:underline">
-          skin
+          Culinary
         </Link>
         <Link to="#" className="hover:text-secondary hover:underline">
-          discover
-        </Link>
-        <Link to="#" className="hover:text-secondary hover:underline">
-          rewards
+          Handmade Pottery
         </Link>
       </nav>
 
