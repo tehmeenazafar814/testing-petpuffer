@@ -104,6 +104,25 @@ export default function VideoOverlay({
           controls={false}
         />
 
+        <div className="absolute inset-x-2 bottom-2 flex items-center justify-between rounded-md bg-white/70 p-1 text-sm text-black">
+          <div className="flex items-center gap-2">
+            <img
+              src="/assets/images/shop1.webp"
+              alt={'test'}
+              className="size-10 rounded object-cover"
+            />
+            <div className="space-y-2">
+              <div className="mb-1 text-xs font-bold">Top</div>
+              <div className="text-xs font-semibold">$55</div>
+            </div>
+          </div>
+          <button className="w-auto rounded-md bg-primary p-2 text-[12px] font-medium text-white shadow-sm hover:animate-pulse hover:bg-white hover:text-black md:w-auto">
+            <span className="inline text-xs md:block">ADD TO </span>
+            {isMobile ? <br /> : null}
+            <span className="inline text-xs md:block">BAG</span>
+          </button>
+        </div>
+
         {/* Close */}
         <div className="absolute left-2 top-2 z-10 flex items-center gap-2 text-white">
           <button onClick={onClose}>
@@ -112,7 +131,7 @@ export default function VideoOverlay({
         </div>
 
         {/* Controls */}
-        <div className="absolute inset-x-2 bottom-5 z-10 flex items-center justify-between px-2 text-white">
+        <div className="absolute inset-x-2 bottom-20 z-10 flex items-center justify-between px-2 text-white">
           <div className="flex gap-4">
             <button onClick={togglePlay}>
               {playing ? <Pause size={24} /> : <Play size={24} />}

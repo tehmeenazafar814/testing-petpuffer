@@ -49,7 +49,7 @@ export function VideoCard({
 
   return (
     <div
-      className="relative mx-auto aspect-[3/4] h-[30vh] w-full max-w-[320px] overflow-hidden rounded shadow-lg md:h-auto"
+      className="relative mx-auto aspect-[3/4] h-[30vh] w-full max-w-[320px] overflow-hidden rounded border-2 border-primary shadow-lg md:h-auto"
       onMouseEnter={playVideo}
       onMouseLeave={pauseVideo}
       onTouchStart={playVideo}
@@ -72,10 +72,28 @@ export function VideoCard({
       {!isPlaying && (
         <div className="absolute inset-0 flex items-center justify-center">
           <button className="rounded-full bg-white/50 p-3">
-            <Play className="fill-primary text-primary" />
+            <Play className="fill-red text-red" />
           </button>
         </div>
       )}
+
+      <div className="absolute inset-x-2 bottom-2 flex flex-col items-start justify-between gap-2 rounded-md border border-primary bg-white/70 p-2 text-sm text-black md:flex-row md:items-center">
+        <div className="flex items-center gap-2">
+          <img
+            src="/assets/images/shop1.webp"
+            alt={title}
+            className="size-12 rounded border border-primary object-cover"
+          />
+          <div className="space-y-2">
+            <div className="mb-1 text-sm font-bold">{title}</div>
+            <div className="text-sm font-semibold">{price}</div>
+          </div>
+        </div>
+        <button className="w-full rounded-md bg-primary p-2 text-[12px] font-semibold text-white shadow-sm hover:animate-pulse hover:bg-white hover:text-black md:w-auto">
+          <span className="inline text-xs md:block">ADD TO</span>
+          <span className="inline text-xs md:block">BAG</span>
+        </button>
+      </div>
     </div>
   )
 }

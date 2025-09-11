@@ -1,19 +1,35 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
 import { motion } from 'framer-motion'
-import heroImage from '/assets/images/heroBg.jpg'
+// import heroImage from '/assets/images/heroBg.jpg'
+import heroVideo from '/assets/videos/heroBg.mp4'
 
 export default function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden md:h-screen">
       {/* Full background image */}
-      <motion.div
+      {/* <motion.div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: 'easeOut' }}
-      />
+      /> */}
+
+      {/* Full background video */}
+      <motion.video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 size-full object-cover"
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+      >
+        <source src={heroVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </motion.video>
 
       {/* Overlay (optional for better text contrast) */}
       <div className="absolute inset-0 bg-black/40" />

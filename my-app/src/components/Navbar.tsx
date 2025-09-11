@@ -3,17 +3,28 @@ import React, { useState } from 'react'
 import { Heart, Search, ShoppingBag, Menu, X, SparkleIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({ transparent, scrolled }) {
   const [mobileMenu, setMobileMenu] = useState(false)
 
   return (
-    <header className="w-full shadow-sm">
+    <header
+      className={`fixed left-0 z-50 w-full transition-colors duration-500 ${
+        transparent && !scrolled
+          ? 'bg-transparent text-white'
+          : 'top-0 bg-background text-text shadow-sm'
+      }`}
+    >
+      {' '}
       {/* Top Row */}
       <div className="container mx-auto flex items-center justify-between px-4 py-1 md:px-6">
         {/* Left - Locale & Currency */}
-        <div className="hidden items-center space-x-2 text-sm md:flex">
+        <div
+          className={`hidden items-center space-x-2 text-sm font-medium ${
+            scrolled ? 'text-primary' : 'text-secondary'
+          } md:flex`}
+        >
           <span className="uppercase">us</span>
-          <span className="rounded-full border border-black px-2 py-0.5 text-xs">
+          <span className="rounded-full border border-secondary px-2 py-0.5 text-xs">
             $
           </span>
         </div>
@@ -40,7 +51,11 @@ export default function Navbar() {
           >
             Moroccan Glow
           </a>
-          <span className="text-sm font-medium uppercase text-text md:text-sm">
+          <span
+            className={`text-sm font-medium uppercase ${
+              (scrolled) ? 'text-text' : 'text-background'
+            } md:text-sm`}
+          >
             By Sarra
           </span>
         </div>
@@ -52,15 +67,18 @@ export default function Navbar() {
         </div>
 
         {/* ---- DESKTOP ICONS ---- */}
-        <div className="hidden items-center gap-5 text-text md:flex">
+        <div
+          className={`hidden items-center gap-5 md:flex ${
+            scrolled ? 'text-primary' : 'text-secondary'
+          }`}
+        >
           <Heart className="size-5 cursor-pointer hover:text-secondary" />
           <Search className="size-5 cursor-pointer hover:text-secondary" />
           <ShoppingBag className="size-5 cursor-pointer hover:text-secondary" />
         </div>
       </div>
-
       {/* ---- DESKTOP NAV LINKS ---- */}
-      <nav className="hidden justify-center space-x-8 py-2 text-sm md:flex">
+      <nav className="hidden justify-center space-x-8 py-1 text-sm md:flex">
         <Link to="#" className="hover:text-secondary hover:underline">
           Face & Body Care
         </Link>
@@ -71,11 +89,11 @@ export default function Navbar() {
           Hair Care
           {/* Sparkle bottom-left */}
           <span className="absolute -bottom-2 -left-2 text-text transition-colors group-hover:text-secondary">
-            <SparkleIcon className="size-3" />
+            <SparkleIcon className={`size-3 ${!scrolled && 'text-white'}`} />
           </span>
           {/* Sparkle top-right */}
           <span className="absolute -right-2 -top-1 text-text transition-colors group-hover:text-secondary">
-            <SparkleIcon className="size-3" />
+            <SparkleIcon className={`size-3 ${!scrolled && 'text-white'}`} />
           </span>
         </Link>
 
@@ -86,10 +104,9 @@ export default function Navbar() {
           Handmade Pottery
         </Link>
       </nav>
-
       {/* ---- MOBILE NAV DROPDOWN ---- */}
       {mobileMenu && (
-        <div className="flex flex-col items-start space-y-4 border-t bg-background p-4 text-sm shadow-lg md:hidden">
+        <div className="flex flex-col items-start space-y-4 border-t bg-primary p-4 text-sm text-background shadow-lg md:hidden">
           <Link
             to="#"
             className="hover:underline"

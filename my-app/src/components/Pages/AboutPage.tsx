@@ -7,14 +7,14 @@ export default function AboutPage() {
   return (
     <>
       <section
-        className="relative flex min-h-[40vh] flex-col items-center justify-center bg-cover bg-center text-center text-white md:min-h-[60vh]"
+        className="relative flex min-h-[40vh] flex-col items-center justify-center bg-cover bg-center text-center text-white md:min-h-[70vh]"
         style={{ backgroundImage: "url('/assets/images/aboutBg.webp')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="relative z-10 space-y-4 px-4">
+        <div className="relative z-10 mt-10 space-y-4 px-4">
           <h1 className="text-3xl font-bold md:text-5xl">About Morocon Glow</h1>
           <p className="mx-auto max-w-2xl text-lg">
             Koba (nkóbá), in Lingala means “turtle,” a nod to our founder’s
@@ -27,9 +27,9 @@ export default function AboutPage() {
       <section className="mt-8 flex flex-col items-center justify-center gap-8 p-4 md:flex-row md:gap-32">
         {/* Image */}
         <img
-          src="https://kobaskincare.com/cdn/shop/files/thumbnail_edit-therese-2230-_1_610x@2x.jpg?v=1747348474"
+          src="/assets/images/about1.png"
           alt="Therese"
-          className="h-auto w-full max-w-sm rounded-lg border border-primary object-cover shadow-lg md:max-w-xl"
+          className="h-[700px] w-full max-w-sm rounded-lg border border-primary object-cover shadow-lg md:max-w-xl"
         />
 
         {/* Text */}
@@ -51,14 +51,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <div className="mx-auto my-8 flex max-w-2xl flex-col items-center justify-center gap-5 text-center">
-        <p className="text-5xl font-thin text-primary">
-          “KOBA skincare offers a range of products that actually work,
-          providing visible results and long lasting hydration.”
+      <div className="mx-auto my-8 flex max-w-5xl flex-col items-center justify-center gap-5 text-center">
+        <p className="px-2 text-3xl font-thin text-primary md:text-5xl">
+          “Moroccan Glow offers a range of luxurious skincare products that are
+          inspired by traditional Moroccan beauty rituals which are formulated
+          to deliver exceptional results, providing deep hydration and a radiant
+          glow.”
         </p>
         <p className="text-sm font-semibold">
-          Thérèse M’Boungoubaya{' '}
-          <span className="font-normal">- Founder & CEO of KOBA skincare</span>
+          Sarra K{' '}
+          <span className="font-normal">- Founder & CEO of Moroccan Glow</span>
         </p>
       </div>
 
@@ -73,19 +75,18 @@ export default function AboutPage() {
         {/* Text */}
         <div className="space-y-4 text-center md:text-left">
           <h2 className="text-3xl font-medium text-primary md:text-4xl">
-            Why KOBA skincare?
+            Why Moroccan Glow?
           </h2>
           <p className="mx-auto max-w-lg text-left italic md:mx-0">
-            "I want to create products people can count on, formulas that do
-            what they say, and then some. The future of skincare is rooted in
-            wellbeing. It’s about helping people reclaim the parts of themselves
-            they’ve felt compelled to hide and rarely get the spotlight. Feet
-            included. KOBA exists to shift the narrative, break the taboo, and
-            bring those so-called 'problem areas' front and center in the beauty
-            conversation. My hope is that KOBA helps you feel good in your skin;
-            confident, empowered, and unapologetically you.”
+            "Moroccan Glow is committed to creating products that deliver real
+            results. Our formulas are designed to do what they say and more. We
+            believe the future of skincare is tied to your overall wellbeing,
+            and that means celebrating every part of your body. Our mission is
+            to shift the narrative around 'problem areas' and bring them into
+            the forefront of your beauty routine. We hope that with Moroccan
+            Glow, you feel confident and comfortable in your own skin.”
           </p>
-          <p className="text-sm">Thérèse - Founder & CEO</p>
+          <p className="text-sm">Sarra - Founder & CEO</p>
         </div>
       </section>
 
@@ -104,30 +105,27 @@ export default function AboutPage() {
       <section className="mt-2 bg-gray-300 text-center">
         <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-5 px-3 py-10">
           <h2 className="text-3xl text-primary md:text-5xl">
-            The Essence of KOBA
+            Moroccan Glow Essence
           </h2>
           <p className="mx-auto max-w-xl text-sm">
-            KOBA is an effective and efficient solution for those looking for a
-            premium alternative to often non-aspirational pharmaceutical creams.
-            Our products are simple to use and fit easily into any skincare
-            routine, transporting you to a spa upon application. KOBA will leave
-            your hard and thickened skin feeling durably elastic and smooth,
-            visibly improving the texture of the skin and leaving behind a
-            divine scent. We have designed our products to proudly sit in your
-            bathroom and be shown off. KOBA will follow you around from your
-            bathroom shelves to your gym bag, to your desk.
+            Moroccan Glow offers an effective and premium alternative to
+            everyday skincare. Our products are simple to use and fit easily
+            into any routine, transporting you to a spa with every application.
+            Moroccan Glow leaves even the most tired skin feeling wonderfully
+            smooth and elastic, visibly improving its texture and leaving a
+            divine scent. We've designed our products to be beautiful additions
+            to your bathroom and to be used wherever you go, from your vanity to
+            your gym bag to your desk.
             <br />
             <br />
-            At the heart of our formulas is safou oil, our not-so-secret skin
-            saviour. This antioxidant-rich fruit pulp is packed with fatty acids
-            and vitamins C and E, helping to improve skin texture, boost
-            collagen production, and protect against premature ageing. It also
-            carries gentle antiseptic properties, adding to its power. And
-            because we believe skincare should smell as good as it feels, we’ve
-            taken the woody, grounding aroma of the safou tree’s bark and
-            reimagined it with expert perfumers in Grasse, the world’s perfume
-            capital, to create KOBA’s signature scent used as the foundation of
-            the natural fragrances in our products.
+            The core of our formulas is argan oil, our skin's best friend. This
+            oil is a powerhouse of antioxidants, fatty acids, and vitamins,
+            which work together to improve skin texture, boost collagen, and
+            protect against signs of aging. We also believe skincare should be
+            an experience for all the senses. That’s why we’ve worked with
+            expert perfumers in Grasse, the perfume capital of the world, to
+            take the natural, warm scent of the argan tree and create our
+            signature fragrance, which is infused into all our products.
           </p>
         </div>
       </section>

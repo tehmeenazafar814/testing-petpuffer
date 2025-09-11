@@ -3,28 +3,28 @@ import React, { useState } from 'react'
 
 const igPosts = [
   {
-    src: 'https://scontent.cdninstagram.com/v/t51.82787-15/536927597_18482024074072786_5170118037341766934_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=1-7&_nc_sid=18de74&_nc_ohc=taCcWUVGEjQQ7kNvwERXosp&_nc_oc=Adl8gtOUXl7iMmyJAQhSsJGb_WLiB4ztyg_a5kmwBYwoksbnLKuEl_Qf-rSdXd81-Go&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=XbE5NlKkGPkmPpz0IVgEnw&oh=00_AfW08z8loV8aHAdLlv21uDPIdbCB2rT0c8VqES7g311ytA&oe=68B10E0A',
+    src: '/assets/images/shop1.webp',
     size: 'col-span-2 row-span-2',
     username: 'fashionista',
     caption: 'Loving the new summer collection! 🌸'
   }, // large
   {
-    src: 'https://scontent.cdninstagram.com/v/t51.82787-15/536927597_18482024074072786_5170118037341766934_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=1-7&_nc_sid=18de74&_nc_ohc=taCcWUVGEjQQ7kNvwERXosp&_nc_oc=Adl8gtOUXl7iMmyJAQhSsJGb_WLiB4ztyg_a5kmwBYwoksbnLKuEl_Qf-rSdXd81-Go&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=XbE5NlKkGPkmPpz0IVgEnw&oh=00_AfW08z8loV8aHAdLlv21uDPIdbCB2rT0c8VqES7g311ytA&oe=68B10E0A',
+    src: '/assets/images/shop1.webp',
     username: 'fashionista',
     caption: 'Loving the new summer collection! 🌸'
   },
   {
-    src: 'https://scontent.cdninstagram.com/v/t51.82787-15/536927597_18482024074072786_5170118037341766934_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=1-7&_nc_sid=18de74&_nc_ohc=taCcWUVGEjQQ7kNvwERXosp&_nc_oc=Adl8gtOUXl7iMmyJAQhSsJGb_WLiB4ztyg_a5kmwBYwoksbnLKuEl_Qf-rSdXd81-Go&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=XbE5NlKkGPkmPpz0IVgEnw&oh=00_AfW08z8loV8aHAdLlv21uDPIdbCB2rT0c8VqES7g311ytA&oe=68B10E0A',
+    src: '/assets/images/shop1.webp',
     username: 'fashionista',
     caption: 'Loving the new summer collection! 🌸'
   },
   {
-    src: 'https://scontent.cdninstagram.com/v/t51.82787-15/536927597_18482024074072786_5170118037341766934_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=1-7&_nc_sid=18de74&_nc_ohc=taCcWUVGEjQQ7kNvwERXosp&_nc_oc=Adl8gtOUXl7iMmyJAQhSsJGb_WLiB4ztyg_a5kmwBYwoksbnLKuEl_Qf-rSdXd81-Go&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=XbE5NlKkGPkmPpz0IVgEnw&oh=00_AfW08z8loV8aHAdLlv21uDPIdbCB2rT0c8VqES7g311ytA&oe=68B10E0A',
+    src: '/assets/images/shop1.webp',
     username: 'fashionista',
     caption: 'Loving the new summer collection! 🌸'
   },
   {
-    src: 'https://scontent.cdninstagram.com/v/t51.82787-15/536927597_18482024074072786_5170118037341766934_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=1-7&_nc_sid=18de74&_nc_ohc=taCcWUVGEjQQ7kNvwERXosp&_nc_oc=Adl8gtOUXl7iMmyJAQhSsJGb_WLiB4ztyg_a5kmwBYwoksbnLKuEl_Qf-rSdXd81-Go&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=XbE5NlKkGPkmPpz0IVgEnw&oh=00_AfW08z8loV8aHAdLlv21uDPIdbCB2rT0c8VqES7g311ytA&oe=68B10E0A',
+    src: '/assets/images/shop1.webp',
     username: 'fashionista',
     caption: 'Loving the new summer collection! 🌸'
   }
@@ -37,7 +37,7 @@ const ShopOurIGSection = () => {
   const closeModal = () => setSelectedPost(null)
 
   return (
-    <section className="px-4 md:py-12">
+    <section className="px-4 py-8 md:py-12">
       {/* Heading */}
       <h2 className="mb-10 w-full px-2 text-center text-3xl font-semibold text-primary md:text-4xl">
         Shop Our IG

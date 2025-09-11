@@ -5,7 +5,7 @@ import rightImage from '/assets/images/essentials1.jpg' // replace with your act
 
 export default function EssentialsSection() {
   return (
-    <section className="w-full bg-background py-6 md:py-0">
+    <section className="w-full bg-background py-6 md:py-10">
       <div className="container mx-auto grid grid-cols-1 items-center gap-6 md:grid-cols-3 md:gap-0 md:px-8">
         {/* Left Image */}
         <img

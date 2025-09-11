@@ -66,7 +66,7 @@ export default function VideoGallery() {
   }
 
   return (
-    <div className="relative py-10 text-primary">
+    <div className="relative text-primary">
       <h2 className="mb-10 w-full whitespace-nowrap px-2 text-center text-3xl font-bold sm:w-auto md:text-4xl">
         Trending Now
       </h2>
@@ -91,13 +91,13 @@ export default function VideoGallery() {
       <div className="hidden md:block">
         <button
           onClick={() => scroll('left')}
-          className="bg-red/80 absolute -left-10 top-1/2 z-10 -translate-y-1/2 rounded-full p-2 shadow"
+          className="absolute -left-5 top-1/2 z-10 -translate-y-1/2 rounded-full bg-secondary p-2 text-white shadow"
         >
           <ChevronLeft />
         </button>
         <button
           onClick={() => scroll('right')}
-          className="bg-red/80 absolute -right-6 top-1/2 z-10 -translate-y-1/2 rounded-full p-2 shadow"
+          className="absolute -right-1 top-1/2 z-10 -translate-y-1/2 rounded-full bg-secondary p-2 text-white  shadow"
         >
           <ChevronRight />
         </button>
