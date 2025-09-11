@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 // import heroImage from '/assets/images/heroBg.jpg'
-import heroVideo from '/assets/videos/heroBg.mp4'
+import heroVideo from '/assets/videos/heroBg1.mp4'
 
 export default function HeroSection() {
   return (
