@@ -7,18 +7,18 @@ export default function AboutSection() {
     <section className="bg-background px-6 py-12 text-center md:px-16">
       {/* Heading */}
       <h2 className="mb-10 w-full px-2 text-center text-3xl font-bold text-primary md:text-4xl">
-        Australian Made Skincare That Works
+        Moroccan Made Skincare That Works
       </h2>
 
       {/* Description */}
       <p className="mx-auto mb-4 max-w-4xl text-lg leading-tight text-text">
-        Since 2009, The Skincare Company has combined in-clinic experience with
-        scientific expertise to create high-performance cosmeceuticals.
+        Since 2016, The Skincare Company has combined in-clinic experience with
+        scientific expertise to create organic skincare products.
       </p>
       <p className="mx-auto mb-12 max-w-4xl text-lg leading-tight text-text">
-        Developed alongside bio-physicists, dermatologists, plastic surgeons and
-        leading clinicians, our formulations are trusted by over 200 stockist
-        partners nationwide.
+        Developed alongside leading Moroccan artisans, herbalists, and
+        dermatologists, our organic formulations are trusted by over 100
+        stockist partners nationwide.
       </p>
 
       {/* Icons Section */}
@@ -37,9 +37,9 @@ export default function AboutSection() {
         {/* Item 2 */}
         <div className="flex flex-col items-center text-center">
           <Globe className="mb-3 size-10 text-primary" />
-          <h3 className="font-semibold text-primary">Australian Made</h3>
+          <h3 className="font-semibold text-primary">Moroccan Made</h3>
           <p className="mt-2 text-sm text-text">
-            Proudly crafted in Australia with quality and integrity
+            Proudly crafted in Morocco with quality and integrity.
           </p>
         </div>
 
