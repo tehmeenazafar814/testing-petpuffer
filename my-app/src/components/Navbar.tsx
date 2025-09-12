@@ -2,36 +2,55 @@
 import React, { useState } from 'react'
 import { Heart, Search, ShoppingBag, Menu, X, SparkleIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import TopBar from './Sections/TopBar'
 
 export default function Navbar({ transparent, scrolled }) {
   const [mobileMenu, setMobileMenu] = useState(false)
 
   return (
     <header
-      className={`fixed left-0 top-6 z-50 w-full transition-colors duration-500 ${
+      className={`fixed left-0 top-0 z-50 w-full transition-colors duration-500 ${
         transparent && !scrolled
           ? 'bg-transparent text-white'
           : 'top-0 bg-background text-text shadow-sm'
       }`}
     >
-      {' '}
+      <TopBar />
+
       {/* Top Row */}
       <div className="container mx-auto flex items-center justify-between px-4 py-1 md:px-6">
-        {/* Left - Locale & Currency */}
+        {/* ---- DESKTOP LEFT NAV ---- */}
         <div
-          className={`hidden items-center space-x-2 text-sm font-medium ${
-            scrolled ? 'text-primary' : 'text-secondary'
-          } md:flex`}
+          className={`hidden w-1/3 items-center justify-start space-x-4 text-sm md:flex ${
+            scrolled ? 'text-text' : 'text-white'
+          }`}
         >
-          <span className="uppercase">us</span>
-          <span className="rounded-full border border-secondary px-2 py-0.5 text-xs">
-            $
-          </span>
+          <Link to="#" className="hover:text-secondary hover:underline">
+            Face & Body Care
+          </Link>
+          <Link
+            to="#"
+            className="group relative hover:text-secondary hover:underline"
+          >
+            Hair Care
+            {/* Sparkles */}
+            <span className="absolute -bottom-2 -left-2 transition-colors group-hover:text-secondary">
+              <SparkleIcon className={`size-3 ${!scrolled && 'text-white'}`} />
+            </span>
+            <span className="absolute -right-2 -top-1 transition-colors group-hover:text-secondary">
+              <SparkleIcon className={`size-3 ${!scrolled && 'text-white'}`} />
+            </span>
+          </Link>
+          <Link to="#" className="hover:text-secondary hover:underline">
+            Culinary
+          </Link>
+          <Link to="#" className="hover:text-secondary hover:underline">
+            Handmade Pottery
+          </Link>
         </div>
 
         {/* ---- MOBILE LEFT (Menu + Search) ---- */}
         <div className="flex items-center gap-4 md:hidden">
-          {/* Menu Toggle */}
           <button onClick={() => setMobileMenu(!mobileMenu)}>
             {mobileMenu ? (
               <X className="size-6" />
@@ -39,21 +58,20 @@ export default function Navbar({ transparent, scrolled }) {
               <Menu className="size-6" />
             )}
           </button>
-          {/* Search */}
           <Search className="size-6 cursor-pointer" />
         </div>
 
         {/* ---- CENTER LOGO ---- */}
-        <div className="flex flex-col items-center text-center">
+        <div className="flex w-1/3 flex-col items-center text-center">
           <a
             href="/"
-            className="text-xl font-bold tracking-wide text-primary md:text-3xl"
+            className="whitespace-nowrap text-xl font-bold tracking-wide text-primary md:text-3xl"
           >
             Moroccan Glow
           </a>
           <span
-            className={`text-sm font-medium uppercase ${
-              (scrolled) ? 'text-text' : 'text-background'
+            className={`text-xs font-medium uppercase ${
+              scrolled ? 'text-text' : 'text-background'
             } md:text-sm`}
           >
             By Sarra
@@ -68,7 +86,7 @@ export default function Navbar({ transparent, scrolled }) {
 
         {/* ---- DESKTOP ICONS ---- */}
         <div
-          className={`hidden items-center gap-5 md:flex ${
+          className={`hidden w-1/3 items-center justify-end gap-5 md:flex ${
             scrolled ? 'text-primary' : 'text-secondary'
           }`}
         >
@@ -77,33 +95,7 @@ export default function Navbar({ transparent, scrolled }) {
           <ShoppingBag className="size-5 cursor-pointer hover:text-secondary" />
         </div>
       </div>
-      {/* ---- DESKTOP NAV LINKS ---- */}
-      <nav className="hidden justify-center space-x-8 py-1 text-sm md:flex">
-        <Link to="#" className="hover:text-secondary hover:underline">
-          Face & Body Care
-        </Link>
-        <Link
-          to="#"
-          className="group relative hover:text-secondary hover:underline"
-        >
-          Hair Care
-          {/* Sparkle bottom-left */}
-          <span className="absolute -bottom-2 -left-2 text-text transition-colors group-hover:text-secondary">
-            <SparkleIcon className={`size-3 ${!scrolled && 'text-white'}`} />
-          </span>
-          {/* Sparkle top-right */}
-          <span className="absolute -right-2 -top-1 text-text transition-colors group-hover:text-secondary">
-            <SparkleIcon className={`size-3 ${!scrolled && 'text-white'}`} />
-          </span>
-        </Link>
 
-        <Link to="#" className="hover:text-secondary hover:underline">
-          Culinary
-        </Link>
-        <Link to="#" className="hover:text-secondary hover:underline">
-          Handmade Pottery
-        </Link>
-      </nav>
       {/* ---- MOBILE NAV DROPDOWN ---- */}
       {mobileMenu && (
         <div className="flex flex-col items-start space-y-4 border-t bg-primary p-4 text-sm text-background shadow-lg md:hidden">

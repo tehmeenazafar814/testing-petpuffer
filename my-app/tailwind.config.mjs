@@ -10,6 +10,10 @@ export default {
         secondary: '#c1a063',
         text: '#393939'
       },
+      backgroundImage: {
+        pinkGradient:
+          'linear-gradient(90deg,rgba(249, 125, 91, 1) 0%, rgba(249, 168, 123, 1) 91%)'
+      },
       animation: {
         marquee: 'marquee 20s linear infinite'
       },

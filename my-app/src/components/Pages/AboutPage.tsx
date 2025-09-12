@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <section
-        className="relative flex min-h-[40vh] flex-col items-center justify-center bg-cover bg-center text-center text-white md:min-h-[70vh]"
+        className="relative flex min-h-[60vh] flex-col items-center justify-center bg-cover bg-center text-center text-white md:min-h-[70vh]"
         style={{ backgroundImage: "url('/assets/images/aboutBg.webp')" }}
       >
         {/* Overlay */}
@@ -19,9 +19,11 @@ export default function AboutPage() {
         <div className="relative z-10 mt-10 space-y-4 px-4">
           <h1 className="text-3xl font-bold md:text-5xl">About Morocon Glow</h1>
           <p className="mx-auto max-w-2xl text-lg">
-            Koba (nkóbá), in Lingala means “turtle,” a nod to our founder’s
-            Congolese heritage. Turtles for KOBA symbolise longevity and
-            protection, shielding your skin against external aggressors.
+            With Moroccan Glow, you're experiencing a rich history of ancient
+            beauty rituals that used natural, local ingredients like argan oil
+            and ghassoul clay. These traditions are still central to the hammam,
+            a traditional public bath where these products are used for
+            purification and skin care.
           </p>
         </div>
       </section>
@@ -40,15 +42,12 @@ export default function AboutPage() {
             How it all began
           </h2>
           <p className="mx-auto max-w-lg text-left md:mx-0">
-            With over a decade in the beauty industry, Therese has worked with
-            some of the biggest names in the business, from Clarins to Sarah
-            Chapman and L’Oréal. Her journey didn’t stop there. As a
-            trailblazing entrepreneur, she built one of the first beauty
-            subscription boxes of its kind, shaking up the way we discover
-            skincare. Blending her behind-the-scenes insight from global
-            powerhouses, her mum’s wisdom as a chemist, and her own struggles
-            with dry skin, she couldn’t help but notice one thing: a gap in the
-            market for an all-encompassing foot cream.
+            Drawing on over a decade in the beauty industry, Sarra worked with
+            giants like Clarins and L’Oréal before creating one of the first
+            beauty subscription boxes. Blending her insider knowledge with her
+            chemist mother's expertise and her own battle with dry skin, she saw
+            a clear need for a comprehensive foot cream, which inspired her to
+            create Moroccan Glow.
           </p>
         </div>
       </section>
@@ -81,7 +80,7 @@ export default function AboutPage() {
       <section className="flex flex-col items-center justify-center gap-8 p-4 md:flex-row md:gap-32">
         {/* Image */}
         <img
-          src="https://kobaskincare.com/cdn/shop/files/Artboard385_610x@2x.jpg?v=1718617878"
+          src="/assets/images/why.png"
           alt="Therese"
           className="h-auto w-full max-w-sm rounded-lg border border-primary object-cover shadow-lg md:max-w-xl"
         />
@@ -107,7 +106,7 @@ export default function AboutPage() {
       <div className="relative h-[40vh] w-full overflow-hidden md:h-[70vh] lg:h-[90vh]">
         <div
           style={{
-            backgroundImage: "url('/assets/images/aboutBg.webp')",
+            backgroundImage: "url('/assets/images/banner.jpeg')",
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover'

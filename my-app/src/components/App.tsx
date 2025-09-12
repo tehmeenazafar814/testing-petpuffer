@@ -7,18 +7,15 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import AboutPage from './Pages/AboutPage'
 import ShopPage from './Pages/ShopPage'
-import { HeaderWrapper } from './Header/HeaderWrapper'
-import { Menu } from './Header/Menu'
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
   const isHome = location.pathname === '/'
-  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight * 0.8) {
+      if (window.scrollY > window.innerHeight * 0.5) {
         setScrolled(true)
       } else {
         setScrolled(false)
@@ -31,22 +28,10 @@ export default function App() {
   return (
     <div className="w-full bg-background">
       {/* TopBar */}
-      {/* <div
-        className={`fixed left-0 top-0 z-50 w-full transition-all duration-700 ease-in-out
-    ${scrolled ? '-translate-y-full opacity-0' : 'translate-y-0 opacity-100'}`}
-      >
-        <TopBar />
-      </div> */}
-      <TopBar />
+      {/* <TopBar /> */}
 
       {/* Navbar */}
       <Navbar transparent={true} scrolled={scrolled} />
-      {/* <HeaderWrapper onMenuClick={() => setMenuOpen(true)} /> */}
-      {/* <Menu
-        open={menuOpen}
-        onClose={() => setMenuOpen(false)}
-        showDesktopMenu={true}
-      /> */}
 
       {/* Routes */}
       <Routes>
