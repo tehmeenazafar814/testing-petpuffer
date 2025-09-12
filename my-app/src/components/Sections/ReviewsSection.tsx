@@ -5,6 +5,10 @@ import testimonials from 'utils/testimonials'
 export default function ReviewSection() {
   return (
     <section className="relative w-full py-14">
+      <h2 className="mb-10 w-full px-2 text-center text-3xl font-semibold text-primary md:text-4xl">
+        Proven Results
+      </h2>
+
       <div className="mx-auto max-w-7xl px-4">
         {/* Grid layout */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

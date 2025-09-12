@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Music2 } from 'lucide-react' // Music2 us
 
 const Footer = () => {
   return (
-    <footer className="px-4 py-12 text-center text-sm text-text">
+    <footer className="bg-background px-4 py-12 text-center text-sm text-text">
       {/* Newsletter */}
       <div className="mx-auto max-w-2xl">
         <p className="mb-2 text-left text-lg font-semibold">

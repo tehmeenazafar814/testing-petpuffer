@@ -6,7 +6,10 @@ import heroVideo from '/assets/videos/heroBg1.mp4'
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden md:h-screen">
+    <section
+      className="relative h-screen w-full overflow-hidden md:h-screen"
+      id="hero"
+    >
       {/* Full background image */}
       {/* <motion.div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

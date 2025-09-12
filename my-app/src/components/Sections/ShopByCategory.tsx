@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const categories = [
-  { title: 'LIPS', image: '/assets/images/catBg.jpeg' },
-  { title: 'FRAGRANCE', image: '/assets/images/catBg.jpeg' },
-  { title: 'BLUSH', image: '/assets/images/catBg.jpeg' },
-  { title: 'EYES', image: '/assets/images/catBg.jpeg' },
-  { title: 'FACE', image: '/assets/images/catBg.jpeg' }
+  { title: 'FACE', image: '/assets/images/catBg.jpeg' },
+  { title: 'BODY', image: '/assets/images/body.png' },
+  { title: 'HAIR', image: '/assets/images/hair.png' },
+  { title: 'CULINARY', image: '/assets/images/culinary.png' },
+  { title: 'POTTERY', image: '/assets/images/pottery.png' }
 ]
 
 const ShopByCategory = () => {
@@ -41,7 +41,7 @@ const ShopByCategory = () => {
                 <img
                   src={cat.image}
                   alt={cat.title}
-                  className="h-auto w-full object-cover"
+                  className="size-full object-cover"
                 />
                 {/* <video
                   src={categories[currentIndex].image}

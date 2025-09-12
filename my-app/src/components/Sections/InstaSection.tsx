@@ -40,7 +40,7 @@ const ShopOurIGSection = () => {
     <section className="px-4 py-8 md:py-12">
       {/* Heading */}
       <h2 className="mb-10 w-full px-2 text-center text-3xl font-semibold text-primary md:text-4xl">
-        Shop Our IG
+        #moroccanglow.official
       </h2>
 
       {/* Grid */}

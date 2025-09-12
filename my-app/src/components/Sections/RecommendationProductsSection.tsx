@@ -58,9 +58,9 @@ export default function RecommendedSection() {
   }
 
   return (
-    <section className="mb-10 md:py-12">
+    <section className="mb-10 py-6 md:py-12">
       <div className="mb-8 flex flex-col items-center justify-between gap-4 px-4 text-center md:flex-row md:gap-0 md:px-14 md:text-left">
-        <h2 className="w-full text-4xl font-semibold text-primary md:text-5xl">
+        <h2 className="w-full text-3xl font-semibold text-primary md:text-5xl">
           Our Recommendations
         </h2>
         <a
