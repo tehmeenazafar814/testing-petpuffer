@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 import ConsultBanner from 'components/Sections/ConsultBanner'
 import FeatureSection from 'components/Sections/FeatureSection'
+import ShopOurIGSection from 'components/Sections/InstaSection'
 import RecommendedSection from 'components/Sections/RecommendationProductsSection'
 import { Atom, FlaskConical, Globe, Heart } from 'lucide-react'
 import React from 'react'
@@ -13,7 +14,7 @@ export default function AboutPage() {
         style={{ backgroundImage: "url('/assets/images/aboutBg.webp')" }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
 
         {/* Content */}
         <div className="relative z-10 mt-10 space-y-4 px-4">
@@ -53,10 +54,20 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto mt-6 flex items-center justify-center overflow-hidden">
-        <div className="bg-primary py-3">
+        <div className="w-full bg-primary py-3">
           <div className="flex w-max animate-marquee whitespace-nowrap text-3xl font-bold uppercase tracking-wide text-background md:text-7xl">
-            beauty-lover, approved.bestsellers, boosted. beauty-lover,
-            approved.bestsellers, boosted.
+            <span className="px-4">
+              beauty-lover, approved. bestsellers, boosted.
+            </span>
+            <span className="px-4">
+              beauty-lover, approved. bestsellers, boosted.
+            </span>
+            <span className="px-4">
+              beauty-lover, approved. bestsellers, boosted.
+            </span>
+            <span className="px-4">
+              beauty-lover, approved. bestsellers, boosted.
+            </span>
           </div>
         </div>
       </section>
@@ -189,6 +200,8 @@ export default function AboutPage() {
       <RecommendedSection />
 
       <FeatureSection />
+
+      <ShopOurIGSection />
     </>
   )
 }

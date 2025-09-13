@@ -15,9 +15,12 @@ export default function ConsultBanner() {
         </p>
 
         {/* Right: Button */}
-        <button className="rounded-none border-2 border-background px-6 py-1 text-sm font-bold uppercase tracking-wide text-background transition hover:bg-white hover:text-primary">
+        <a
+          href="https://oncehub.com/shopikings"
+          className="rounded-none border-2 border-background px-6 py-1 text-center text-sm font-bold uppercase tracking-wide text-background transition hover:bg-white hover:text-primary"
+        >
           Book a<br /> Consult Now
-        </button>
+        </a>
       </div>
     </section>
   )

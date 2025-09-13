@@ -15,8 +15,8 @@ export default function Footer() {
           <h3 className="mb-4 text-sm font-bold uppercase">Get To Know Us</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:underline">
-                Our Mission
+              <a href="/about" className="hover:underline">
+                About Us
               </a>
             </li>
             <li>
@@ -59,16 +59,6 @@ export default function Footer() {
                 Refund Policy
               </a>
             </li>
-            <li>
-              <a href="#" className="hover:underline">
-                DuoGen Rewards Program
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Subscribe & Save
-              </a>
-            </li>
           </ul>
         </div>
 
@@ -78,17 +68,22 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             <li>
               <a href="#" className="hover:underline">
-                Offers
+                Shop All
               </a>
             </li>
             <li>
               <a href="#" className="hover:underline">
-                Bundle & Save
+                Bundles & Save
               </a>
             </li>
             <li>
               <a href="#" className="hover:underline">
                 Skin Quiz
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:underline">
+                Coming Soon
               </a>
             </li>
           </ul>
@@ -143,7 +138,7 @@ export default function Footer() {
           />
           <input
             type="tel"
-            placeholder="+ Phone Number"
+            placeholder="Phone Number"
             className="mb-2 w-full rounded-sm px-3 py-1 text-black"
           />
 
@@ -160,22 +155,22 @@ export default function Footer() {
           <img
             src="/assets/images/pay/2.png"
             alt="visa"
-            className="h-auto w-10"
+            className="h-6 w-auto"
           />
           <img
             src="/assets/images/pay/01.png"
             alt="mastercard"
-            className="h-auto w-12"
+            className="h-6 w-auto"
           />
           <img
             src="/assets/images/pay/3.png"
             alt="amex"
-            className="h-auto w-12"
+            className="h-6 w-auto"
           />
           <img
-            src="/assets/images/pay/4.svg"
+            src="/assets/images/pay/4.png"
             alt="apple pay"
-            className="h-auto w-10"
+            className="h-6 w-auto"
           />
         </div>
       </div>

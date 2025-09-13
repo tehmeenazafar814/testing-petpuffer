@@ -12,7 +12,7 @@ export default function AboutSection() {
 
       {/* Description */}
       <p className="mx-auto mb-4 max-w-4xl text-lg leading-tight text-text">
-        Since 2016, The Skincare Company has combined in-clinic experience with
+        Since 2016, Moroccan Glow has combined in-clinic experience with
         scientific expertise to create organic skincare products.
       </p>
       <p className="mx-auto mb-12 max-w-4xl text-lg leading-tight text-text">

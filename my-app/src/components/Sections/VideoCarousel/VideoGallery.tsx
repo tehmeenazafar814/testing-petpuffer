@@ -6,31 +6,31 @@ import VideoOverlay from './VideoOverlay'
 
 const videos = [
   {
-    src: '/assets/videos/3.mp4',
+    src: '/assets/videos/new.mp4',
     title: 'Top 1',
     price: '$35.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: '/assets/videos/3.mp4',
+    src: '/assets/videos/new.mp4',
     title: 'Top 2',
     price: '$29.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: '/assets/videos/3.mp4',
+    src: '/assets/videos/new.mp4',
     title: 'Top 3',
     price: '$55.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: '/assets/videos/3.mp4',
+    src: '/assets/videos/new.mp4',
     title: 'Top 4',
     price: '$42.00',
     image: '/assets/images/products/test.jpg'
   },
   {
-    src: '/assets/videos/3.mp4',
+    src: '/assets/videos/new.mp4',
     title: 'Top 5',
     price: '$38.00',
     image: '/assets/images/products/test.jpg'

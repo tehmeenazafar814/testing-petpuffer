@@ -7,13 +7,17 @@ const ExclusiveSection = () => {
       <div className="flex flex-col overflow-hidden rounded-xl bg-white md:flex-row">
         {/* Image container */}
         <div className="w-full md:w-1/2">
-          <video
+          {/* <video
             src="https://cdn.shopify.com/videos/c/o/v/3809451510ff46b7bb13ba0ae6903112.mp4"
             className="size-full object-cover md:rounded-l-xl"
             autoPlay
             loop
             muted
             playsInline
+          /> */}
+          <img
+            src="/assets/images/hammkit.jpeg"
+            className="size-full object-cover md:rounded-l-xl"
           />
         </div>
 
