@@ -7,11 +7,14 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import AboutPage from './Pages/AboutPage'
 import ShopPage from './Pages/ShopPage'
+import { HeaderWrapper } from './Header/HeaderWrapper'
+import { Menu } from './Header/Menu'
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
   const isHome = location.pathname === '/'
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,7 +34,13 @@ export default function App() {
       {/* <TopBar /> */}
 
       {/* Navbar */}
-      <Navbar transparent={true} scrolled={scrolled} />
+      {/* <Navbar transparent={true} scrolled={scrolled} /> */}
+      {/* <HeaderWrapper onMenuClick={() => setMenuOpen(true)} />
+      <Menu
+        open={menuOpen}
+        onClose={() => setMenuOpen(false)}
+        showDesktopMenu={true}
+      /> */}
 
       {/* Routes */}
       <Routes>

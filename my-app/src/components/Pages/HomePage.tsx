@@ -1,5 +1,7 @@
 /* eslint-disable prettier/prettier */
 // import FadeInWhenVisible from 'components/Animate/FadeInWhenVisible'
+import { HeaderWrapper } from 'components/Header/HeaderWrapper'
+import { Menu } from 'components/Header/Menu'
 import AboutSection from 'components/Sections/AboutSection'
 // import AvailableSection from 'components/Sections/AvailableSection'
 // import BestSellerSection from 'components/Sections/BestSellersSection'
@@ -17,12 +19,14 @@ import ShopSection from 'components/Sections/ShopSection'
 import VideoGallery from 'components/Sections/VideoCarousel/VideoGallery'
 import StickySideButton from 'components/StickySideButton'
 // import VirtualTryOnSection from 'components/Sections/VirtualTryOnSection'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function HomePage() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className="bg-background">
-      <HeroSection />
+      <HeroSection menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <PartnerMarquee />
       <ShopSection />
       <section className="bg-background md:px-10 md:pb-12">

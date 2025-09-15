@@ -3,12 +3,15 @@ import React, { useEffect, useState } from 'react'
 import { Header } from './Header'
 import { HeaderSecond } from './HeaderSecond'
 import { motion, AnimatePresence } from 'framer-motion'
+import TopBar from 'components/Sections/TopBar'
 
 export function HeaderWrapper({
   onMenuClick,
+  menuOpen,
   forceSecondOnly = false
 }: {
   onMenuClick: () => void
+  menuOpen?: boolean
   forceSecondOnly?: boolean
 }) {
   const [showSecond, setShowSecond] = useState(false)
@@ -41,7 +44,12 @@ export function HeaderWrapper({
 
   return (
     <>
-      {!forceSecondOnly && <Header onMenuClick={onMenuClick} />}
+      {!forceSecondOnly && (
+        <>
+          <TopBar />
+          <Header onMenuClick={onMenuClick} menuOpen={menuOpen} />
+        </>
+      )}
 
       {/* Smooth animated transition */}
       <AnimatePresence>

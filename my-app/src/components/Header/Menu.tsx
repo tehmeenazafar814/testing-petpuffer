@@ -19,16 +19,10 @@ const itemVariants = {
 }
 
 const links = [
-  { label: 'New Arrivals', path: '/' },
-  { label: 'Final Sale', path: '/' },
-  { label: 'Men', path: '/shop/men' },
-  { label: 'Women', path: '/shop/women' },
-  { label: 'Accessories', path: '/' },
-  { label: 'Headwear', path: '/' },
-  { label: 'FAQ', path: '/' },
-  { label: 'Community', path: '/' },
-  { label: 'About', path: '/about' },
-  { label: 'Contact', path: '/contact' }
+  { label: 'Face & Body Care', path: '/' },
+  { label: 'Hair Care', path: '/' },
+  { label: 'Culinary', path: '/' },
+  { label: 'Handmade Pottery', path: '/' }
 ]
 
 export function Menu({
@@ -60,7 +54,7 @@ export function Menu({
     <>
       {/* Mobile Sidebar Menu */}
       <nav
-        className={`fixed left-0 top-0 z-40 size-full bg-black text-white transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed left-0 top-0 z-50 size-full bg-background text-text transition-transform duration-300 ease-in-out lg:hidden ${
           open ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -75,10 +69,10 @@ export function Menu({
                 placeholder="Search keyword"
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
-                className="w-full bg-transparent px-2 py-1 text-sm text-white outline-none placeholder:text-gray-300 md:w-48"
+                className="w-full bg-transparent p-1 text-sm text-text outline-none placeholder:text-gray-600 md:w-48"
               />
               <button type="submit">
-                <Search className="size-4 text-white" />
+                <Search className="size-4 text-secondary" />
               </button>
             </div>
             <button type="button" onClick={onClose} className="ml-10">
@@ -89,7 +83,7 @@ export function Menu({
           {links.map((link, i) => (
             <li
               key={i}
-              className="cursor-pointer text-lg hover:underline"
+              className="cursor-pointer text-sm font-semibold hover:underline"
               onClick={onClose}
             >
               <Link to={link.path}>{link.label}</Link>
@@ -97,18 +91,17 @@ export function Menu({
           ))}
         </ul>
 
-        <div className="absolute bottom-10 left-0 flex items-center gap-10 px-6 text-white">
-          <MapPin className="size-6 cursor-pointer hover:text-red" />
-          <Phone className="size-6 cursor-pointer hover:text-red" />
-          <Globe className="size-6 cursor-pointer hover:text-red" />
+        <div className="absolute bottom-10 left-0 flex items-center gap-10 px-6 text-secondary">
+          <MapPin className="size-6 cursor-pointer hover:text-primary" />
+          <Phone className="size-6 cursor-pointer hover:text-primary" />
         </div>
       </nav>
 
       {/* Desktop Vertical Menu */}
       {showDesktopMenu && (
-        <nav className="hidden lg:absolute lg:left-10 lg:top-1/2 lg:z-30 lg:block lg:-translate-y-1/2">
+        <nav className="hidden lg:absolute lg:left-10 lg:top-1/2 lg:z-30 lg:block">
           <motion.ul
-            className="-mt-20 flex flex-col space-y-6 text-lg font-semibold text-white"
+            className="flex flex-col space-y-6 font-medium text-white"
             variants={listVariants}
             initial="hidden"
             animate="visible"

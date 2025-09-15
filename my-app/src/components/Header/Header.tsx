@@ -27,7 +27,13 @@ const cartItems = [
   }
 ]
 
-export function Header({ onMenuClick }: { onMenuClick: () => void }) {
+export function Header({
+  onMenuClick,
+  menuOpen
+}: {
+  onMenuClick: () => void
+  menuOpen: boolean
+}) {
   const [keyword, setKeyword] = useState('')
   const navigate = useNavigate()
   const location = useLocation()
@@ -52,7 +58,10 @@ export function Header({ onMenuClick }: { onMenuClick: () => void }) {
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
       {/* Main Header */}
-      <div className="relative flex items-center justify-between bg-transparent p-4 text-white lg:px-10">
+      <div
+        className={`relative flex items-center justify-between bg-transparent p-4 
+  ${menuOpen ? 'text-black' : 'text-white'} lg:px-10`}
+      >
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
           <Menu className="size-6 cursor-pointer" onClick={onMenuClick} />
@@ -62,27 +71,27 @@ export function Header({ onMenuClick }: { onMenuClick: () => void }) {
         <div className="hidden items-center gap-4 text-white md:flex">
           <MapPin className="size-5 cursor-pointer hover:text-primary" />
           <Phone className="size-5 cursor-pointer hover:text-primary" />
-          <Globe className="size-5 cursor-pointer hover:text-primary" />
         </div>
 
         {/* Center Logo */}
-        <div className="absolute left-1/2 -translate-x-1/2 text-3xl font-light uppercase tracking-widest">
-          {/* <span className="font-thin">MARC</span>
-          <span className="font-normal">CAIN</span> */}
-          <a href="/">
-            <img
-              src={
-                isMobile
-                  ? '/assets/images/white-pic-dog.png'
-                  : '/assets/images/logo.png'
-              }
-              className={isMobile ? 'size-14' : 'h-12 w-full'}
-            />
+        <div className="absolute left-1/2 flex -translate-x-1/2 flex-col items-center text-3xl font-light">
+          <a
+            href="/"
+            className="whitespace-nowrap text-xl font-bold tracking-wide text-primary md:text-3xl"
+          >
+            Moroccan Glow
           </a>
+          <span className={`-mt-1 text-xs font-semibold uppercase md:text-sm`}>
+            By Sarra
+          </span>
         </div>
 
         {/* Right Icons */}
-        <div className="flex items-center gap-4 rounded bg-black/50 p-1 px-2">
+        <div
+          className={`flex items-center gap-4 rounded p-1 px-2 ${
+            menuOpen ? 'text-text' : 'text-white'
+          }`}
+        >
           <form className="relative hidden md:block" onSubmit={handleSearch}>
             <input
               type="text"
@@ -92,12 +101,12 @@ export function Header({ onMenuClick }: { onMenuClick: () => void }) {
               className="w-36 border-b border-white bg-transparent px-2 py-1 text-sm text-white outline-none placeholder:text-gray-300 md:w-48"
             />
             <button type="submit">
-              <Search className="hover:text-red absolute right-1 top-1 size-4 text-white" />
+              <Search className="absolute right-1 top-1 size-4 text-white hover:text-primary" />
             </button>
           </form>
           {/* <Heart className="cursor-pointer text-gray-200 hover:text-black" /> */}
-          <Heart className="hover:text-red cursor-pointer text-white" />
-          {/* <ShoppingBagIcon className="cursor-pointer text-white hover:text-red" /> */}
+          <Heart className={`cursor-pointer hover:text-primary`} />
+          <ShoppingBagIcon className="cursor-pointer hover:text-primary" />
           {/* <CartPreview items={cartItems} deliveryFee={3.99} /> */}
         </div>
       </div>
