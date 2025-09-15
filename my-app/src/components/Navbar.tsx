@@ -18,10 +18,10 @@ export default function Navbar({ transparent, scrolled }) {
       <TopBar />
 
       {/* Top Row */}
-      <div className="container mx-auto flex items-center justify-between px-4 py-1 md:px-6">
+      <div className="flex w-full items-center justify-between px-4 py-1 md:px-6">
         {/* ---- DESKTOP LEFT NAV ---- */}
         <div
-          className={`hidden w-1/3 items-center justify-start space-x-4 text-sm md:flex ${
+          className={`hidden w-1/3 items-center justify-start space-x-4 md:flex ${
             scrolled ? 'text-text' : 'text-white'
           }`}
         >
@@ -90,9 +90,9 @@ export default function Navbar({ transparent, scrolled }) {
             scrolled ? 'text-primary' : 'text-secondary'
           }`}
         >
-          <Heart className="size-5 cursor-pointer hover:text-secondary" />
-          <Search className="size-5 cursor-pointer hover:text-secondary" />
-          <ShoppingBag className="size-5 cursor-pointer hover:text-secondary" />
+          <Heart className="size-6 cursor-pointer hover:text-secondary" />
+          <Search className="size-6 cursor-pointer hover:text-secondary" />
+          <ShoppingBag className="size-6 cursor-pointer hover:text-secondary" />
         </div>
       </div>
 
