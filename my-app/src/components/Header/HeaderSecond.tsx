@@ -77,7 +77,7 @@ export function HeaderSecond({ onMenuClick }: { onMenuClick: () => void }) {
 
         {/* Right Icons */}
         <div className="flex items-center gap-4">
-          <form className="relative hidden md:block" onSubmit={handleSearch}>
+          {/* <form className="relative hidden md:block" onSubmit={handleSearch}>
             <input
               type="text"
               placeholder="Search keyword"
@@ -88,7 +88,7 @@ export function HeaderSecond({ onMenuClick }: { onMenuClick: () => void }) {
             <button type="submit">
               <Search className="absolute right-1 top-1 size-4 text-text hover:text-primary" />
             </button>
-          </form>
+          </form> */}
           {/* <Heart className="cursor-pointer text-black hover:text-gray-700" /> */}
           <Heart className="cursor-pointer text-text hover:text-primary" />
           <ShoppingBagIcon className="cursor-pointer text-text hover:text-primary" />

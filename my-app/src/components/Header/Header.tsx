@@ -69,8 +69,8 @@ export function Header({
 
         {/* Desktop Left Icons */}
         <div className="hidden items-center gap-4 text-white md:flex">
-          <MapPin className="size-5 cursor-pointer hover:text-primary" />
-          <Phone className="size-5 cursor-pointer hover:text-primary" />
+          {/* <MapPin className="size-5 cursor-pointer hover:text-primary" />
+          <Phone className="size-5 cursor-pointer hover:text-primary" /> */}
         </div>
 
         {/* Center Logo */}
@@ -92,7 +92,7 @@ export function Header({
             menuOpen ? 'text-text' : 'text-white'
           }`}
         >
-          <form className="relative hidden md:block" onSubmit={handleSearch}>
+          {/* <form className="relative hidden md:block" onSubmit={handleSearch}>
             <input
               type="text"
               placeholder="Search keyword"
@@ -103,7 +103,7 @@ export function Header({
             <button type="submit">
               <Search className="absolute right-1 top-1 size-4 text-white hover:text-primary" />
             </button>
-          </form>
+          </form> */}
           {/* <Heart className="cursor-pointer text-gray-200 hover:text-black" /> */}
           <Heart className={`cursor-pointer hover:text-primary`} />
           <ShoppingBagIcon className="cursor-pointer hover:text-primary" />

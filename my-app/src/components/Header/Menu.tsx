@@ -22,7 +22,10 @@ const links = [
   { label: 'Face & Body Care', path: '/' },
   { label: 'Hair Care', path: '/' },
   { label: 'Culinary', path: '/' },
-  { label: 'Handmade Pottery', path: '/' }
+  { label: 'Handmade Pottery', path: '/' },
+  { label: 'About', path: '/' },
+  { label: 'Reviews', path: '/' },
+  { label: 'FAQ', path: '/' }
 ]
 
 export function Menu({
@@ -99,7 +102,7 @@ export function Menu({
 
       {/* Desktop Vertical Menu */}
       {showDesktopMenu && (
-        <nav className="hidden lg:absolute lg:left-10 lg:top-1/2 lg:z-30 lg:block">
+        <nav className="hidden lg:absolute lg:left-10 lg:top-44 lg:z-30 lg:block">
           <motion.ul
             className="flex flex-col space-y-6 font-medium text-white"
             variants={listVariants}

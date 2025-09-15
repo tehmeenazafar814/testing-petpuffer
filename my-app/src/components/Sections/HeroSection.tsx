@@ -33,7 +33,7 @@ export default function HeroSection({ menuOpen, setMenuOpen }) {
           onMenuClick={() => setMenuOpen(true)}
           menuOpen={menuOpen}
         />
-        <div className="mt-40">
+        <div className="mt-0">
           <Menu
             open={menuOpen}
             onClose={() => setMenuOpen(false)}
@@ -44,7 +44,7 @@ export default function HeroSection({ menuOpen, setMenuOpen }) {
 
       {/* Hero Content */}
       <motion.div
-        className="relative z-10 mt-36 flex h-full flex-col items-center justify-center px-6 text-center text-white md:px-16 md:text-center"
+        className="relative z-10 mt-64 flex h-full flex-col items-center justify-center px-6 text-center text-white md:mt-52 md:px-16 md:text-center"
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
