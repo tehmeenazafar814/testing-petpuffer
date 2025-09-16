@@ -23,7 +23,7 @@ const links = [
   { label: 'Hair Care', path: '/' },
   { label: 'Culinary', path: '/' },
   { label: 'Handmade Pottery', path: '/' },
-  { label: 'About', path: '/' },
+  { label: 'About', path: '/about' },
   { label: 'Reviews', path: '/' },
   { label: 'FAQ', path: '/' }
 ]

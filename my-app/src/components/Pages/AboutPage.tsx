@@ -1,14 +1,30 @@
 /* eslint-disable prettier/prettier */
+import { HeaderSecond } from 'components/Header/HeaderSecond'
+import { Menu } from 'components/Header/Menu'
 import ConsultBanner from 'components/Sections/ConsultBanner'
 import FeatureSection from 'components/Sections/FeatureSection'
 import ShopOurIGSection from 'components/Sections/InstaSection'
 import RecommendedSection from 'components/Sections/RecommendationProductsSection'
 import { Atom, FlaskConical, Globe, Heart } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
+import { isMobile } from 'react-device-detect'
 
 export default function AboutPage() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <>
+      <div className="sticky top-0 z-50 shadow-md">
+        <HeaderSecond onMenuClick={() => setMenuOpen(true)} />
+        {isMobile && (
+          <Menu
+            open={menuOpen}
+            onClose={() => setMenuOpen(false)}
+            showDesktopMenu={true}
+          />
+        )}
+      </div>
+
       <section
         className="relative flex min-h-[60vh] flex-col items-center justify-center bg-cover bg-center text-center text-white md:min-h-[70vh]"
         style={{ backgroundImage: "url('/assets/images/aboutBg.webp')" }}
