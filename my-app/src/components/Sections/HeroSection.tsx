@@ -49,15 +49,14 @@ export default function HeroSection({ menuOpen, setMenuOpen }) {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <motion.p className="font-bold uppercase tracking-wide text-white">
+        {/* <motion.p className="font-bold uppercase tracking-wide text-white">
           Experience Your
         </motion.p>
         <motion.h1 className="mt-1 text-3xl font-bold uppercase tracking-wide md:max-w-lg md:text-5xl">
           Natural Glow
-        </motion.h1>
-        <motion.p className="mt-4 max-w-md text-sm md:text-lg">
-          Through Moroccan Hammam Rituals Luxurious | Natural Skincare | Ancient
-          Moroccan Rituals
+        </motion.h1> */}
+        <motion.p className="mt-4 max-w-sm text-sm md:text-lg">
+          Experience your natural glow with Moroccan Hammam Rituals
         </motion.p>
         <motion.button className="mx-auto mt-4 w-fit rounded-md bg-white px-6 py-3 text-sm font-medium text-text transition hover:bg-secondary hover:text-white md:mx-0">
           Shop Now
