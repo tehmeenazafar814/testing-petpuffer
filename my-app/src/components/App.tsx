@@ -9,6 +9,9 @@ import AboutPage from './Pages/AboutPage'
 import ShopPage from './Pages/ShopPage'
 import { HeaderWrapper } from './Header/HeaderWrapper'
 import { Menu } from './Header/Menu'
+import TermsPage from './Pages/TermsPage'
+import PrivacyPage from './Pages/PrivacyPolicyPage'
+import FaqsPage from './Pages/FaqsPage'
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -47,6 +50,10 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/shop" element={<ShopPage />} />
+
+        <Route path="/faqs" element={<FaqsPage />} />
+        <Route path="/terms" element={<TermsPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPage />} />
 
         <Route path="/*" element={<HomePage />} />
       </Routes>

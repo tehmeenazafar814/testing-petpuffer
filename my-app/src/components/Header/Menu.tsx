@@ -25,7 +25,7 @@ const links = [
   { label: 'Handmade Pottery', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Reviews', path: '/' },
-  { label: 'FAQ', path: '/' }
+  { label: 'FAQ', path: '/faqs' }
 ]
 
 export function Menu({

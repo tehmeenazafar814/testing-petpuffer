@@ -1,0 +1,33 @@
+{
+  "orders": [
+    "can i cancel my order?",
+    "i put the wrong address in my order, what should i do?",
+    "i have not received my order confirmation, what should i do?",
+    "how can i check the status of my order?",
+    "how can i track my package?",
+    "my package seems to have stopped moving.",
+    "do you offer returns?",
+    "do you offer exchanges?",
+    "i refused my delivery, where is my refund?",
+    "my items arrived damaged, what should i do?",
+    "i received incorrect items in my order, what should i do?"
+  ],
+  "payment": [
+    "how can i update my payment method?",
+    "why was my payment declined?"
+  ],
+  "subscriptions": [
+    "how do i manage my subscription?",
+    "how can i cancel my subscription?"
+  ],
+  "accounts": ["how do i reset my password?", "how do i change my email?"],
+  "products": ["are your products cruelty-free?", "are your products vegan?"],
+  "shipping": [
+    "which countries do you ship to?",
+    "what are your shipping rates?"
+  ],
+  "contact": [
+    "how can i contact support?",
+    "how long does it take to hear back from support?"
+  ]
+}
