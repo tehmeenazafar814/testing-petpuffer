@@ -45,7 +45,6 @@ export default function App() {
         showDesktopMenu={true}
       /> */}
 
-      {/* Routes */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
